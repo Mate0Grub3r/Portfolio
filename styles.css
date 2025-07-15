@@ -1,0 +1,773 @@
+html {
+  font-family: "inter";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(assets/fonts/Inter_18pt-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(assets/fonts/Inter_18pt-Bold.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(assets/fonts/Inter_18pt-Italic.ttf);
+  font-weight: italic;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(assets/fonts/Inter_18pt-Light.ttf);
+  font-weight: light;
+  font-style: light;
+}
+
+body {
+  background-color: #1d1d1d;
+  margin: 0;
+  padding: 0;
+  font-family: "inter", sans-serif;
+  color: whitesmoke;
+}
+
+.box-texto-centro {
+  background: radial-gradient(#313131, #1d1d1d 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 95vh;
+  padding: 0;
+  flex-direction: row-reverse;
+  transform: translateX(-3rem);
+}
+
+.descripcion_perfil {
+  max-width: 50vw;
+  min-width: 30vw;
+  font-size: 1.2rem;
+  color: rgb(176, 176, 176);
+  padding: 0.5rem;
+  margin: 0;
+  border-left: rgb(176, 176, 176) 0.2rem solid;
+  box-shadow: 0 0 30px #323232c1;
+  border-radius: 5px;
+}
+
+.text-span {
+  color: rgb(158, 22, 22);
+  font-weight: bold;
+}
+
+.titulos h2 {
+  font-size: 3.2rem;
+  color: rgb(176, 176, 176);
+  margin: 0;
+  margin-left: -2.5rem;
+  padding-top: 6rem;
+}
+
+.titulos h1 {
+  font-size: 3.5rem;
+  color: rgb(158, 22, 22);
+  margin: 0;
+  height: 20vh;
+}
+
+nav {
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 30px #171717d8;
+  background-color: #313131;
+  width: 100%;
+  height: 3.8vh;
+  gap: 1rem;
+}
+
+.nav-links {
+  padding: 0.5rem;
+  text-decoration: none;
+  margin: 2rem;
+  font-weight: bold;
+  color: rgb(158, 22, 22);
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links:hover {
+  color: rgb(200, 30, 30);
+  height: 1.5rem;
+  box-shadow: 0 0 20px #1d1d1d70;
+}
+
+.Box-logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.simbolo-izq-logo {
+  color: rgb(158, 22, 22);
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.barra-der-logo {
+  color: #1d1d1d;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.simbolo-der-logo {
+  color: rgb(158, 22, 22);
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.link-logo {
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+h3 {
+  margin-top: 1.35rem;
+}
+
+.boton-linkedin,
+.boton-github {
+  height: 2.5vh;
+  padding: 0.5rem 1rem;
+  background-color: rgb(158, 22, 22);
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 20px #252525;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-botones {
+  display: flex;
+  justify-content: end;
+  gap: 0.2rem;
+  margin: 0;
+  box-sizing: border-box;
+  translate: 0.4rem 2.8rem;
+}
+
+.boton-github {
+  gap: 0.5rem;
+}
+
+.boton-linkedin:hover,
+.boton-github:hover,
+.footer-contact a:hover {
+  color: whitesmoke;
+  box-shadow: 0 0 30px #181818;
+  background-color: rgb(200, 30, 30);
+}
+
+.img-linkedin,
+.img-github {
+  margin-right: 0.7rem;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.img-github {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.indicador-pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  background-color: rgb(158, 22, 22);
+  min-width: 2.5rem;
+  max-width: 2.5rem;
+  height: 0.4vh;
+  border-radius: 10px;
+  transform: translateX(0.3rem);
+}
+
+.box-stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.section-stack {
+  background-color: #202020;
+  max-width: 70vw;
+  min-width: 60vw;
+  font-size: 1.2rem;
+  color: rgb(176, 176, 176);
+  padding: 0.5rem;
+  margin: 0;
+  box-shadow: 0 0 30px rgb(50, 50, 50);
+  border-radius: 10px;
+}
+
+.h2-stack {
+  color: rgb(176, 176, 176);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  translate: -2rem -8rem;
+  margin: 0;
+  text-align: center;
+}
+
+.legend-tecnologias {
+  font-weight: bold;
+  color: rgb(176, 176, 176);
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.fieldset-tecnologias {
+  transform: translateY(-3rem);
+  gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 1rem;
+  padding: 2rem;
+  border: 3px solid rgba(158, 22, 22, 0.8);
+  border-radius: 10px;
+}
+
+#logo-html {
+  width: 60px;
+}
+
+.html-texto {
+  color: rgb(176, 176, 176);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.2rem;
+  text-align: center;
+}
+
+.box-css-stack {
+  transform: translateY(-0.2rem);
+}
+
+#logo-css {
+  margin: 0;
+  width: 70px;
+}
+
+.css-texto {
+  color: rgb(176, 176, 176);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: center;
+}
+
+#logo-js {
+  margin: 0;
+  width: 60px;
+}
+
+.js-texto {
+  transform: translateX(-1rem);
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.2rem;
+}
+
+.box-react-stack {
+  translate: -1.5rem -0.3rem;
+}
+
+#logo-react {
+  margin: 0;
+  width: 70px;
+}
+
+.react-texto {
+  text-align: center;
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.box-git-stack {
+  translate: -2rem -0.3rem;
+}
+
+#logo-git {
+  margin: 0;
+  width: 70px;
+}
+
+.git-texto {
+  text-align: center;
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.box-sass-stack {
+  translate: -2.2rem -0.3rem;
+}
+
+#logo-sass {
+  margin: 0;
+  width: 70px;
+}
+
+.sass-texto {
+  text-align: center;
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.legend-herramientas {
+  font-weight: bold;
+  color: rgb(176, 176, 176);
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.fieldset-herramientas {
+  transform: translateY(-2rem);
+  gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 1rem;
+  padding: 2rem;
+  border: 3px solid rgba(158, 22, 22, 0.8);
+  border-radius: 10px;
+}
+
+.box-github-stack {
+  transform: translateY(0.2rem);
+}
+
+#logo-github {
+  margin: 0;
+  width: 65px;
+}
+
+.github-texto {
+  text-align: center;
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+#logo-bootstrap {
+  margin: 0;
+  width: 70px;
+}
+
+.bootstrap-texto {
+  text-align: center;
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+#logo-notion {
+  margin: 0;
+  width: 70px;
+}
+
+.notion-texto {
+  text-align: center;
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+#logo-elementor {
+  margin: 0;
+  width: 70px;
+}
+
+.elementor-texto {
+  text-align: center;
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.box-windows-stack {
+  translate: -0.5rem 0.1rem;
+}
+
+#logo-windows {
+  transform: translateX(0.3rem);
+  margin: 0;
+  width: 65px;
+}
+
+.windows-texto {
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.box-figma-stack {
+  transform: translateY(0.3rem);
+}
+
+#logo-figma {
+  margin: 0;
+  width: 60px;
+}
+
+.figma-texto {
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.5rem;
+}
+
+.box-vscode-stack {
+  translate: -0.3rem 0.2rem;
+}
+
+#logo-vscode {
+  margin: 0;
+  width: 65px;
+}
+
+.vscode-texto {
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.5rem;
+}
+
+footer {
+  margin-top: 40vh;
+  height: 50vh;
+  width: 100%;
+  background-color: #181818;
+}
+
+.box-footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+}
+
+.box-red {
+  translate: -0.5rem -3.5vh;
+  max-width: 50vw;
+  min-width: 40vw;
+  height: 6vh;
+  background-color: rgba(158, 22, 22, 0.405);
+  border-radius: 8px;
+}
+
+.footer-contact {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50vw;
+  min-width: 40vw;
+  height: 6vh;
+  display: flex;
+  background-color: #313131;
+  color: rgb(176, 176, 176);
+  transform: translateY(-3vh);
+  border-radius: 8px;
+}
+
+.footer-contact p {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+.footer-contact a {
+  height: 2.5vh;
+  padding: 0.5rem 1rem;
+  background-color: rgb(158, 22, 22);
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 20px #252525;
+  margin-left: 2rem;
+}
+
+.footer-contact a:hover {
+  box-shadow: 0 0 30px #313131;
+}
+
+.red {
+  color: rgb(158, 22, 22);
+}
+
+.footer-links-container {
+  translate: 0vw -55vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-links-container p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(176, 176, 176);
+}
+
+.footer-links {
+  text-decoration: none;
+  color: rgb(158, 22, 22);
+}
+
+.footer-links:hover {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  color: rgb(158, 22, 22);
+}
+
+.Box-logo-footer {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  translate: 0vw -32vh;
+}
+
+.simbolo-izq-logo-footer {
+  color: rgb(158, 22, 22);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.barra-der-logo-footer {
+  color: #313131;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.simbolo-der-logo-footer {
+  color: rgb(158, 22, 22);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.link-logo-footer {
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.copyright {
+  color: rgb(176, 176, 176);
+  translate: 0vw -37vh;
+}
+
+.copyright span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/*-------------------------------------ACA EMPIEZA EL RESPONSIVE-------------------------------*/
+
+@media (max-width: 1366px) {
+  .box-red {
+    translate: -0.2rem -3.5vh;
+    max-width: 50vw;
+    min-width: 47vw;
+    height: 6vh;
+    background-color: rgba(158, 22, 22, 0.405);
+    border-radius: 8px;
+  }
+
+  .footer-contact a {
+    transform: translateX(-1vw);
+  }
+}
+
+@media (max-width: 1280px) {
+  .box-red {
+    translate: -0.2rem -3.5vh;
+    max-width: 50vw;
+    min-width: 50vw;
+    height: 6vh;
+    background-color: rgba(158, 22, 22, 0.405);
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background: radial-gradient(#313131, #1d1d1d 60%);
+    background-color: #1d1d1d;
+    margin: 0;
+    padding: 0;
+    font-family: "inter", sans-serif;
+    color: whitesmoke;
+  }
+
+  .box-texto-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    padding-left: 100vw;
+    transform: translateY(-15vh);
+  }
+
+  .descripcion_perfil {
+    min-width: 80vw;
+    min-height: 20vh;
+    font-size: 1.2rem;
+    color: rgb(176, 176, 176);
+    padding: 0.5rem;
+    margin: 0;
+    border: none;
+    border-top: rgb(176, 176, 176) 0.2rem solid;
+    box-shadow: 0 0 30px #323232c1;
+    border-radius: 5px;
+  }
+
+  .text-span {
+    color: rgb(158, 22, 22);
+    font-weight: bold;
+  }
+
+  .boton-linkedin,
+  .boton-github {
+    height: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    translate: -24.5vw -2vh;
+    padding: 0.5rem 1rem;
+    background-color: rgb(158, 22, 22);
+    color: rgb(176, 176, 176);
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 20px #252525;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .boton-linkedin:hover,
+  .boton-github:hover {
+    color: whitesmoke;
+    box-shadow: 0 0 30px #181818;
+    background-color: rgb(200, 30, 30);
+  }
+
+  .img-linkedin,
+  .img-github {
+    margin-right: 0.7rem;
+    border-radius: 5px;
+    display: inline;
+    align-items: left;
+    justify-content: left;
+    width: 25px;
+    height: 25px;
+  }
+
+  .boton-github {
+    margin: 0;
+    translate: 8vw -7.7vh;
+  }
+
+  .img-github {
+    margin: 0;
+    transform: translateX(-0.4rem);
+    width: 30px;
+    height: 30px;
+  }
+
+  .titulos {
+    margin-top: 4rem;
+    transform: translateY(6rem);
+    order: -1;
+  }
+  .titulos h2 {
+    transform: translateX(1rem);
+    font-size: 3rem;
+    color: rgb(176, 176, 176);
+  }
+
+  .titulos h1 {
+    transform: translateX(1.5rem);
+    font-size: 3rem;
+    color: rgb(158, 22, 22);
+  }
+
+  h3 {
+    margin-top: 1.35rem;
+  }
+
+  .indicador-pagina {
+    margin: 0;
+    translate: 5.7vw 1.3vh;
+    background-color: rgb(158, 22, 22);
+    width: 2.5vw;
+    height: 0.4vh;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,301 @@
+@font-face {
+  font-family: "inter";
+  src: url(../assets/fonts/Inter_18pt-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(../assets/fonts/Inter_18pt-Bold.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(../assets/fonts/Inter_18pt-Italic.ttf);
+  font-weight: italic;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(..assets/fonts/Inter_18pt-Light.ttf);
+  font-weight: light;
+  font-style: light;
+}
+html {
+  font-family: "inter";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+body {
+  background: radial-gradient(#313131, #1d1d1d 60%);
+  background-color: #1d1d1d;
+  margin: 0;
+  padding: 0;
+  font-family: "inter", sans-serif;
+  color: whitesmoke;
+}
+
+.box-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100vh;
+  min-width: 20vw;
+  padding: 0;
+  margin-left: -20rem;
+  flex-direction: row-reverse;
+}
+
+.form {
+  max-width: 500px;
+  min-width: 500px;
+  font-size: 1.2rem;
+  color: rgb(176, 176, 176);
+  padding: 1rem;
+  margin: 0;
+  border-left: rgb(176, 176, 176) 0.2rem solid;
+  box-shadow: 0 0 30px #323232c1;
+  border-radius: 5px;
+}
+
+.p-formulario {
+  font-size: 3.2rem;
+  color: rgb(176, 176, 176);
+  margin: 0;
+  margin-left: 1rem;
+  padding-top: 6rem;
+  font-weight: bold;
+}
+
+.p-contacto {
+  font-size: 3.5rem;
+  color: rgb(158, 22, 22);
+  margin: 0;
+  margin-left: 1.5rem;
+  height: 20vh;
+  font-weight: bold;
+}
+.p-de {
+  font-size: 3.2rem;
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  margin: 0;
+  margin-left: 7.5rem;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 30px #171717d8;
+  background-color: #313131;
+  width: 100%;
+  height: 3.8vh;
+  gap: 1rem;
+}
+
+.nav-links {
+  padding: 0.5rem;
+  text-decoration: none;
+  margin: 2rem;
+  font-weight: bold;
+  color: rgb(158, 22, 22);
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links:hover {
+  color: rgb(200, 30, 30);
+  height: 1.5rem;
+  box-shadow: 0 0 20px #1d1d1d70;
+}
+
+.Box-logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.simbolo-izq-logo {
+  color: rgb(158, 22, 22);
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.barra-der-logo {
+  color: #1d1d1d;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.simbolo-der-logo {
+  color: rgb(158, 22, 22);
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.link-logo {
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+h3 {
+  margin-top: 1.35rem;
+}
+
+input,
+textarea {
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #424242;
+  width: 100%;
+  min-height: 2.5rem;
+  border-radius: 6px;
+  font-family: "inter", sans-serif;
+  border-bottom: rgb(176, 176, 176) 2px solid;
+  box-shadow: 0px 0px 8px #1c1c1c;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: rgb(158, 22, 22) 2px solid;
+  box-shadow: 0px 0px 30px #1c1c1c;
+}
+
+textarea {
+  min-height: 5rem;
+  max-height: 5rem;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+#Enviar {
+  background-color: rgb(158, 22, 22);
+  width: 30%;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  border: none;
+  padding: 0.5rem;
+  margin-left: 11rem;
+  cursor: pointer;
+  margin-bottom: 0.3rem;
+}
+
+#Enviar:hover {
+  background-color: rgb(200, 30, 30);
+  box-shadow: 0px 0px 10px #1c1c1c;
+}
+
+.contact-gmail {
+  margin-top: 2rem;
+  margin-bottom: 0px;
+  font-size: 0.9rem;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(176, 176, 176);
+}
+
+#link-gmail {
+  color: whitesmoke;
+}
+
+.indicador-pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  background-color: rgb(158, 22, 22);
+  min-width: 2.5rem;
+  max-width: 2.5rem;
+  height: 0.4vh;
+  border-radius: 10px;
+  transform: translateX(1.7rem);
+}
+
+fieldset {
+  padding: 2rem;
+  border: 3px solid rgba(158, 22, 22, 0.8);
+  border-radius: 10px;
+}
+
+legend {
+  text-transform: uppercase;
+  color: rgb(176, 176, 176);
+  font-weight: bold;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+
+/* @mediaquery para .indicador-pagina */
+
+@media screen and (max-width: 1920px) {
+  .indicador-pagina {
+    transform: translateX(1.3vw);
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .indicador-pagina {
+    transform: translateX(1.5vw);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .indicador-pagina {
+    transform: translateX(2vw);
+  }
+}
+
+/* fin de @mediaquery para .indicador-pagina */
+
+/* @mediaquery para .Box-logo */
+
+@media screen and (max-width: 1920px) {
+  .Box-logo {
+    transform: translateX(0vw);
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .Box-logo {
+    transform: translateX(0vw);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Box-logo {
+    transform: translateX(0vw);
+  }
+}
+
+/* fin de @mediaquery para .Box-logo */
