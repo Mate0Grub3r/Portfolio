@@ -51,7 +51,7 @@ body {
   min-height: 95vh;
   min-width: 20vw;
   padding: 0;
-  margin-left: -10rem;
+  margin-left: -5rem;
   flex-direction: row-reverse;
 }
 
@@ -156,8 +156,8 @@ nav {
 }
 
 img {
-  max-width: 350px;
-  max-height: 200px;
+  max-width: 600px;
+  max-height: 250px;
   border-radius: 10px;
 }
 
@@ -166,8 +166,8 @@ img {
   margin: 1rem;
   box-shadow: 0 0 10px rgb(0, 0, 0);
   background-color: #1d1d1d;
-  width: 400px;
-  height: 250px;
+  width: 600px;
+  height: 300px;
   border-radius: 10px;
   text-align: center;
 }
